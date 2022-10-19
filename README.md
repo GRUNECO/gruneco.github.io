@@ -1,4 +1,4 @@
-# Introducción
+## Introducción
 
 Esta web actua como repositorio donde se listan los recursos informáticos (software, datasets, etc) que se han desarrollado en GRUNECO.
 
