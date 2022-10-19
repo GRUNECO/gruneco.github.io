@@ -5,7 +5,7 @@
 Esta web actua como repositorio donde se listan los recursos informáticos (software, datasets, etc) que se han desarrollado en GRUNECO.
 
 - [Datasets](/datasets.html)
-- Software EEG
+- [Software EEG](/eeg.html)
 - Software Imágenes
 
 [Recuento Previo de Desarrollos, Datasets y Proyectos](https://docs.google.com/spreadsheets/d/1rseh0Krrq91k40vMtkXOuToIjzUvJCbk-87sNIqzggU/edit?usp=drivesdk)
