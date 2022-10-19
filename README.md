@@ -4,6 +4,12 @@ Esta web actua como repositorio donde se listan los recursos informáticos (soft
 
 ## Datasets
 
+- Biomarcadores
+- Parkinson
+- Control Inhibitorio
+- Anestesia (OpenBCI)
+- ...
+
 ## Software de Procesamiento
 
 ### EEG
@@ -16,6 +22,8 @@ Esta web actua como repositorio donde se listan los recursos informáticos (soft
 - sovaharmony (python): Flujo de procesamiento que armoniza datos EEG de multiples fuentes para sacar derivados de Potencia Relativa,Coherencia,Entropía,etc. 
 - ElectroEG Innovate (web): Aplicación Web para la Centralización de datos de EEG y su procesamiento.
 - EEGPAS (ejecutable windows/python): Software de escritorio para el procesamiento de datos de EEG en reposo.
+- Filtro FIR (python)
+
 - ...
 
 ### MRI & fMRI
