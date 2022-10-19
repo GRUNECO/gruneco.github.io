@@ -1,1 +1,2 @@
-# GRUNECO.github.io
+# Grupo Neuropsicología y Conducta
+## UdeA
