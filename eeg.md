@@ -1,39 +1,41 @@
-# Software EEG
+---
+title:  "Software EEG"
+---
 
-## sovachronux 
+# sovachronux 
 
 (python) Potencia y Potencia Relativa inspirado en la implementación de [Chronux](http://chronux.org/)
 
-## sovawica 
+# sovawica 
 
 (python) Suavizado de artefactos en EEG mediante el método de [wavelet-enhaced ICA](https://doi.org/10.1016/j.jneumeth.2006.05.033)
 
-## sovareject 
+# sovareject 
 
 (python) Rechazo de epocas basado en las funciones de rechazo de eeglab que usan el espectro, la amplitud, la kurtosis y tendencias lineales. Incluye un método automático de umbralización inspirado levemente en la funcion pop_autorej de eeglab.
 
-## sovabids 
+# sovabids 
 
 (python) Software para la conversion de datos eeg al formato bids [documentación](sovabids.readthedocs.io)
 
-## sovaflow 
+# sovaflow 
 
 (python) Flujo de preprocesamiento de EEG en reposo. Incluye PREP+wICA+Rechazo de Epocas.
 
-## sovaharmony 
+# sovaharmony 
 
 (python) Flujo de procesamiento que armoniza datos EEG de multiples fuentes para sacar derivados de Potencia Relativa,Coherencia,Entropía,etc. 
 
-## ElectroEG Innovate 
+# ElectroEG Innovate 
 
 (web) Aplicación Web para la Centralización de datos de EEG y su procesamiento.
 
-## EEGPAS
+# EEGPAS
 
 (ejecutable windows/python) Software de escritorio para el procesamiento de datos de EEG en reposo.
 
-## Filtros FIR
+# Filtros FIR
 
 (python) Inspirados en implementaciones de eeglab.
 
-- ...
+# Otros...
