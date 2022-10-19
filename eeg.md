@@ -4,7 +4,7 @@ title:  "Software EEG"
 
 # sovachronux 
 
-(python) Potencia y Potencia Relativa inspirado en la implementación de [Chronux](http://chronux.org/)
+(python) Potencia Absoluta y Potencia Relativa por bandas. Inspirado en la implementación de [Chronux](http://chronux.org/)
 
 # sovawica 
 
