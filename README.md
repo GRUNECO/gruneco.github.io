@@ -1,3 +1,6 @@
+
+![Banner](https://www.udea.edu.co/wps/wcm/connect/udea/eba017e2-87fb-40c7-b7d8-6bb7d0e008ae/Logo_GRUNECO_R.jpg)<br/>
+
 ## Introducción
 
 Esta web actua como repositorio donde se listan los recursos informáticos (software, datasets, etc) que se han desarrollado en GRUNECO.
