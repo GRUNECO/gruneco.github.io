@@ -1,11 +1,13 @@
-# Datasets GRUNECO
+---
+title:  "Datasets GRUNECO"
+---
 
-## Biomarcadores
+# Biomarcadores
 
-## Parkinson
+# Parkinson
 
-## Control Inhibitorio
+# Control Inhibitorio
 
-## Anestesia (OpenBCI)
+# Anestesia (OpenBCI)
 
-## Otros...
+# Otros...
