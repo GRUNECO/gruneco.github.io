@@ -1,7 +1,9 @@
 
 # SOVABIDS
 
-<p style="text-align: justify;">Paquete de Python 
+<p style="text-align: justify;">
+ 
+Paquete de Python 
 
 Software para la conversion de datos eeg al formato bids [documentación](sovabids.readthedocs.io)
 
