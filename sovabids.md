@@ -1,6 +1,8 @@
 
 # SOVABIDS
 
+<p>
+<center>
 <div style="text-align: justify">
 Paquete de Python 
 
@@ -79,4 +81,8 @@ fields :
  - entities.task 
 ```  
 Una vez realizada la conversión y verificación del dataset a utilizar se procede a la instalación del paquete de preprocesamiento SOVA. 
+ 
 </div>
+</center>
+</p>
+
