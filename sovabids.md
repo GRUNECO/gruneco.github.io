@@ -1,9 +1,8 @@
 
 # SOVABIDS
 
-<p>
-<center>
-<div style="text-align: justify">
+<p style="text-align: justify;">
+
 Paquete de Python 
 
 Software para la conversion de datos eeg al formato bids [documentación](sovabids.readthedocs.io)
@@ -82,7 +81,5 @@ fields :
 ```  
 Una vez realizada la conversión y verificación del dataset a utilizar se procede a la instalación del paquete de preprocesamiento SOVA. 
  
-</div>
-</center>
 </p>
 
