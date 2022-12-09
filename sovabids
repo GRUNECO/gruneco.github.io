@@ -1,4 +1,12 @@
 
 # sovabids 
-
 (python) Software para la conversion de datos eeg al formato bids [documentación](sovabids.readthedocs.io)
+
+## Estandarización BIDS 
+Descargar y reubicar la base de datos 
+
+Evaluar la disponibilidad y distribución de la información y el formato (Verificar si está en formato BIDS o si tiene la información necesaria para realizar la conversión a BIDS). Si no se encuentra en formato BIDS, realizar la conversión de los datos utilizando SOVABIDS, utilizando la documentación: https://sovabids.readthedocs.io/en/latest/  
+
+**Test BIDS** 
+
+Permite identificar si una base de datos se encuentra en formato BIDS. Para realizar esta prueba diríjase al siguiente repositorio de GitHub: <https://github.com/GRUNECO/eeg_harmonization> y en la carpeta Carpeta abierta con relleno sólido misc, ejecute el archivo pybids_test.py. 
