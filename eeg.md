@@ -26,6 +26,10 @@ title:  "Software EEG"
 
 (python) Flujo de procesamiento que armoniza datos EEG de multiples fuentes para sacar derivados de Potencia Relativa,Coherencia,Entropía,etc. 
 
+# sovaviolin
+
+Paquete para el manejo de control de calidad de datos por técnicas de inspección visual
+
 # ElectroEG Innovate 
 
 (web) Aplicación Web para la Centralización de datos de EEG y su procesamiento.
