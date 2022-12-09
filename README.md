@@ -3,8 +3,8 @@
 Esta web actua como repositorio donde se listan los recursos informáticos (software, datasets, etc) que se han desarrollado en GRUNECO.
 
 - [Datasets](https://gruneco.github.io/datasets.html)
-- [Software EEG](https://gruneco.github.io/eeg.html)
-- Software Imágenes
+- [Flujo de trabajo EEG](https://gruneco.github.io/eeg.html)
+- [Flujo de trabajo Neuroimagen](https://gruneco.github.io/neuroimagen.html)
 
 [Recuento Previo de Desarrollos, Datasets y Proyectos](https://docs.google.com/spreadsheets/d/1rseh0Krrq91k40vMtkXOuToIjzUvJCbk-87sNIqzggU/edit?usp=drivesdk)
 
