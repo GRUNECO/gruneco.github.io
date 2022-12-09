@@ -9,4 +9,4 @@ Evaluar la disponibilidad y distribución de la información y el formato (Verif
 
 **Test BIDS** 
 
-Permite identificar si una base de datos se encuentra en formato BIDS. Para realizar esta prueba diríjase al siguiente repositorio de GitHub: <https://github.com/GRUNECO/eeg_harmonization> y en la carpeta Carpeta abierta con relleno sólido misc, ejecute el archivo pybids_test.py. 
+Permite identificar si una base de datos se encuentra en formato BIDS. Para realizar esta prueba diríjase al siguiente repositorio de GitHub: <https://github.com/GRUNECO/eeg_harmonization> y en la carpeta Carpeta abierta :file_folder: misc, ejecute el archivo pybids_test.py. 
