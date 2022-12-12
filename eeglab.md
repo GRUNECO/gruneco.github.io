@@ -413,3 +413,224 @@ Dividir el registro en secciones es una manera útil de extraer la información 
 
 EEG.epoch se encuentra ubicado dentro de la variable EEG, esta estructura
 contiene información acerca de las épocas asociadas al registro. Es una estructura similar a EEG.event, excepto que solo hay un registro para cada época, que contiene los siguientes campos: event, eventlatency, eventposition, eventtype, eventurevent. Los campos dentro de esta estructura son homólogos a los encontrados en EEG.events con excepción del campo event, el cual contien el índice de los eventos ocurridos en una época en específico. La longitud de la estructura hace referencia al número de épocas en el registro (ver figura 26) [2].
+
+**Figura 26.** ​Estructura EEG.epoch [2].
+
+Para la extracción de épocas por medio de la interfaz gráfica se sigue de la
+siguiente manera: Tools > Extract Epochs [12].
+
+**Figura 27**. ​Extraer épocas [12].
+De acuerdo a la figura 27 se hace clic en el botón superior derecho “...” , y se presenta una ventana con los tipos de eventos disponibles (ver figura 28) [12].
+
+**Figura 28**. ​Tipos de eventos disponibles [12].
+
+Se elige un tipo de evento, para el ejemplo de la figura 28 se escoge “square” y se presiona Ok.
+
+**Figura 29**. ​Extraer épocas [12].
+
+A continuación en la figura 29, en Epoch limits se ponen el tiempo en segundos del inicio y final de la época alrededor de donde ocurrió el evento en el experimento. Para este ejemplo se empieza en -1 (1 segundo antes del evento) y se termina en 2 (2 segundos luego del evento). También si se puede colocar un nombre descriptivo para el nuevo dataset y luego presionar Ok [12].
+
+Seguidamente sale una ventana con opción para cambiar el nombre, guardar el dataset en una ubicación o aceptar lo que está por defecto, presionar Ok para confirmar (ver figura 30) [12].
+
+**Figura 30**.​ Información de dataset [12].
+
+Para este caso, el estímulo tiene tres segundos de longitud. A menudo es mejor extraer épocas largas de los datos, para hacer posible la descomposición tiempo-frecuencia a bajas frecuencias (<< 10 Hz) [12].
+
+<u>Extracción de los valores de la línea base:</u>
+
+La eliminación de la línea base de cada época es útil cuando tiene diferencias entre las épocas de los datos. Esto no es significativamente interpretable, pero sí puede generar sesgos en el análisis de los datos [11].
+
+Después de haber extraído las épocas de los datos, la siguiente ventana (ver figura 31) saldrá automáticamente. También es posible remover la línea base,
+seleccionando en el menú Tools > Remove baseline [12].
+
+**Figura 31**. ​Remoción de la línea base [12].
+
+En la ventana de la figura 31 se puede especificar el periodo de la línea de base en milisegundos o en puntos de tiempo y también se puede establecer la ventana de latencia en cada época, a través de la cual se computa la media de la línea base para ser removida. El dataset original está por defecto sobrescrito por un dataset con una línea de base removida; además esto no es un método óptimo para seleccionar un periodo o valor de línea de base. Presione Ok para sustraer la línea de base o Cancel para no eliminarla [12].
+
+<u>Re-referenciar los datos:</u>
+
+Luego de los pasos anteriores (extracción de épocas y eliminación de la línea de base) es buen momento para guardar el dataset bajo un nuevo nombre usando la ventana de pop_newset(), para guardar el actual dataset en cualquier otro momento, seleccione File > Save current dataset o File > Save current dataset as[12].
+
+Aparece la ventana del buscador de archivos (figura 32), introduzca el nombre del dataset (que debe terminar con la extensión .set), presione Save y luego Ok para guardarlo con todos los datos incluidos hasta ese momento.
+Para la extracción de épocas por comandos de línea: el procedimiento anterior para la extracción de épocas por medio de código se realiza escribiendo en la ventana de comandos de MATLAB (o en un script) lo siguiente [5]:
+
+```>>EEG = pop_epoch( EEG, { 'square' }, [-1 2], 'epochinfo', 'yes');```
+
+No se debe olvidar primero remover la actividad de referencia o línea de base:
+
+```>> EEG = pop_rmbase( EEG, [-1000 0]);```
+
+**Figura 32**. ​Ventana del buscador de archivos [5].
+
+<u>Importación de épocas:</u>
+
+Importar información de épocas indica que éstas ya han sido extraídas de los datos continuos del EEG, y que el arreglo de MATLAB o el archivo de texto, contienen una entrada por época [4].
+
+Importar épocas desde arreglo de MATLAB: Si se desea importar épocas, ir al menú File > Import epoch info > from Matlab array or ascii file; cabe resaltar que la importación de épocas involucra los mismos pasos que una importación de un dataset continuo,es decir, para importar las épocas de un dataset desde un arreglo en MATLAB, es necesario importar toda la señal, segmentada ya en épocas. Al importar un arreglo de MATLAB de 3 dimensiones, es automáticamente importado como un dataset dividido en épocas, siendo la primera dimensión interpretada como los canales del registro, la segunda como los puntos que contienen los datos, y la tercera como las épocas o intentos; para realizarlo seleccionar File > Import epoch info > from Matlab array or ascii file [4].
+
+Importar épocas desde un archivo de texto (ascii): Para importar épocas desde un archivo de texto, ir al menú File > Import epoch info > from Matlab array or ascii file. En la tabla 6 se indica el formato necesario para el archivo [4]. 
+
+**Tabla 6**. ​Formato de archivo de texto para importar épocas.
+
+La figura 33 indica la ventana asociada a la importación de épocas mediante archivo de texto.
+
+**Figura 33.** ​Importación de épocas mediante archivo de texto [4].
+
+En el campo File input field (col.) names indique epoch response rt, siendo rt un acrónimo para el tiempo de reacción. En el campo Field name(s) containing latencies indique rt, este es el único campo que contiene información acerca de las latencias. En el campo Number of file header lines to ignore introduzca el número de líneas usadas en el encabezado del archivo, para indicar el nombre de las columnas. En el campo Latencies time unit rel. to seconds indique las unidades en las que se encuentran dados los tiempos de latencia, siendo 1E-3 equivalente a milisegundos. Active la casilla Remove old epoch and event info para sobreescribir los datos asociados a eventos y épocas [4].
+
+##Análisis de componentes independientes (ICA)
+
+Imagine que está en una habitación, en la cual dos personas se encuentran hablando al tiempo. Usted cuenta con dos micrófonos ubicados en distintas
+posiciones dentro de la habitación. Los micrófonos reportan las señales X1(t) y X2(t), cada una de las cuales está conformada por la suma de ambas fuentes (persona 1 y persona 2) S1(t) y S2(t) en diferentes proporciones. Se tiene entonces que las señales X1(t) y X2(t) vienen dadas por las ecuaciones (1) y (2) [13]:
+
+Donde los parámetros a nn dependen de factores como la distancia de los
+micrófonos a las personas y otros factores [13].
+
+Es de interés conocer la forma de las señales S1(t) y S2(t), note que, si se conocen los parámetros a nn , es posible resolver las ecuaciones (1) y (2), encontrando los datos de interés [13].
+
+Para conocer los parámetros a nn es útil asumir información acerca de las
+características estadísticas de las señales. Asumiendo que S1(t) es estadísticamente independiente de S2(t) en todo momento t, se obtienen resultados certeros al momento de encontrar las fuentes, teniendo en cuenta que en la práctica no es necesario que se cumpla esta condición a cabalidad [13].
+
+Al igual que en el ejemplo anterior, las señales encontradas mediante EEG son una mezcla de señales producidas por fuentes (tanto neuronales como no neuronales) al momento de realizar el registro. Asumiendo que el proceso de mezcla (en el caso de EEG, debido al volúmen conductor) no agrega información nueva a las señales, además de que es lineal y pasivo, es posible, bajo ciertas consideraciones, estimar las fuentes de las señales registradas por los electrodos [13].
+
+El análisis de componentes independientes (ICA por sus siglas en inglés) es un proceso de separación ciega de fuentes que permite encontrar las señales S1(t) y S2(t) (en el caso de EEG, fuentes neuronales o no neuronales) desde los datos obtenidos con X1(t) y X2(t) (señales adquiridas por los electrodos), asumiendo que las fuentes son estadísticamente independientes y que el número de fuentes es igual al número de sensores (micrófonos);esta última condición aplica para EEG[13].
+
+<u>Calcular componentes ICA mediante EEGLAB:</u>
+
+Para encontrar las componentes ICA mediante la interfaz gráfica de EEGLAB, ir al menú Tools > Run ICA. Se mostrará una ventana emergente como la mostrada en la figura 34 [14].
+
+**Figura 34**. ​Algoritmos ICA mediante interfaz gráfica en EEGLAB [14].
+
+Es posible seleccionar canales de cierto tipo (por ejemplo que se incluyan canales EEG y EMG), o incluso una lista de canales para ejecutar el algoritmo ICA; mediante la opción Channel type(s) or channel indices se selecciona el tipo o grupo de canales a los cuales se les desea aplicar la descomposición. Hay que notar que EEGLAB admite editar el uso de distintos algoritmos de descomposición ICA y solo runica y jader son parte de la distribución estándar de EEGLAB, sin embargo, si se desea usar fastica instale la fastica toolbox, para luego incluirla en el path de MATLAB [14].
+
+Las diferencias entre uno u otro algoritmo de descomposición no están del todo establecidas, sin embargo, el equipo de desarrollo de EEGLAB recomienda el uso de algoritmos Infomax ICA (runica/binica), debido a la estabilidad de las componentes encontradas, especialmente en su versión más rápida binica (para usar el algoritmo binica es necesario descargar el archivo binario en
+https://sccn.ucsd.edu/wiki/Binica, y luego modificar el archivo icadefs.m para que apunte al archivo binario correcto) [14].
+
+Si se quiere ejecutar la descomposición ICA mediante código, hay que correr la siguiente línea en la ventana de comandos de MATLAB [14]:
+
+```>> EEG = pop_runica(EEG,'extended',1);```
+
+Los atributos ´extended´ y 1 son recomendados por el equipo de desarrollo de
+EEGLAB, con el fin de que el algoritmo detecte fuentes subgausianas.
+
+Si se desea abrir la ventana mostrada en la figura 34 mediante código ejecute la siguiente línea en la ventana de comandos de MATLAB [14]:
+
+````>> pop_runica();````
+
+<u>Graficar scalpmaps de componentes en 2D:</u>
+
+Para graficar los componentes ICA en 2D ir al menú Plot > Component maps > in
+2-D, emergerá una ventana similar a la mostrada en la figura 35 [14].
+
+**Figura 35.** ​Graficar scalpmaps de componentes 2D [14].
+
+Luego de introducir el número de componentes a graficar, pulsar Ok. En la figura 36 se pueden observar los scalpmaps de algunas componentes ICA.
+
+**Figura 36**. ​Scalpmaps de componentes ICA [14].
+
+**Nota**: las unidades usadas para graficar las componentes (scalpmaps) son
+arbitrarias y las unidades usadas asignadas a la actividad ICA a lo largo del tiempo (scroll) también son arbitrarias. Sin embargo, la multiplicación de los valores observados en los escalpmaps y los datos ICA a lo largo del tiempo, tienen como resultado las mismas unidades de los datos originales (sin aplicar ICA) [14].
+
+<u>Graficar headplots de componentes en 3D:</u>
+
+Para graficar la activación de los componentes en 3D ir al menú Plot > Component maps > in 2-D, emergerá una ventana como la mostrada en la figura 37 [14].
+
+**Figura 37**. ​Graficar headplots de componentes en 3D [14].
+
+Seleccionar los componentes a graficar, junto con los electrodos a ubicar (si se desea) y presionar Ok. En la figura 38 se pueden observar los headplots de algunos componentes ICA.
+
+**Figura 38**.​ Headplots de componentes ICA [14].
+
+<u>Estudiando y removiendo componentes ICA:</u>
+
+Aprender a reconocer los tipos de componentes independientes puede requerir experiencia. Los principales criterios para determinar si un componente es 1 cognitivamente relacionado (neuronal), 2) artefacto muscular o 3) algún otro tipo de artefacto, son [14]:
+
+1. Scalpmap de la componente.
+2. Actividad de la componente en el tiempo (para ver, ir al menú: Plot >
+Component activation (scroll)).
+3. Espectro de potencia de la actividad del componente.
+4. La erpimagen.m de la componente.
+
+Para estudiar las propiedades de los componentes y si se desea marcarlos para su rechazo (eliminación del aporte del componente a la señal), ir al menú tools > Reject data using ICA > Reject components by map y emergerá una ventana similar a la mostrada en la figura 39 [14].
+
+**Figura 39.** ​Propiedades y rechazo de componentes [14].
+
+Seleccionando uno de los cuadros ubicados encima de los componentes, es posible visualizar las propiedades de estos [14].
+
+Características de componentes oculares: El componente 3 de la figura 39 muestra signos de estar asociado a un artefacto visual, estos artefactos suelen tener características como [14]:
+
+  ● Decrecimiento suave de la potencia espectral (figura 40, inferior).
+  ● El scalpmap muestra una proyección fuertemente frontal (figura 40, superior
+  izquierda)
+  ● La erpimágen evidencia movimientos oculares individuales (figura 40,
+  superior derecha).
+
+**Figura 40**. ​Posible artefacto ocular [14].
+
+Características de componentes musculares: El componente 32 de la figura 39
+muestra signos de estar asociado a un artefacto muscular, estos artefactos suelen tener características como [14]:
+
+  ● Estar espacialmente localizados, activación temporal generalmente (figura
+  41, superior izquierda).
+  ● Presentar alta potencia en frecuencias altas (20-50 Hz o más) (figura 41,
+  inferior).
+
+Características de artefactos asociados a electrodos sueltos: Un tipo usual de artefacto encontrado es el asociado a electrodos que, durante el registro, perdieron contacto o su impedancia asociada aumentó demasiado. En la figura 39 no está presente este tipo de artefacto (no con certeza), sin embargo, la componente 24 muestra signos de haber captado ruido de 60 Hz, especialmente luego del trial 65 (figura 42, superior derecha). Este tipo de artefactos suele presentar activación espacial localizada y no presentar representación de dipolo (como sí lo suelen hacer las fuentes neuronales) [14].
+
+**Figura 42**. ​Influencia del ruido externo en los componentes EEG [14].
+
+Características de fuentes posiblemente neuronales: El componente 2 de la figura 39 podría estar asociada a una fuente neuronal, este tipo de componentes pueden presentar características como [14]:
+
+  ● Scalpmaps dipolares (figura 43, superior izquierda).
+  ● Picos espectrales en frecuencias típicas de EEG,suelen presentarse picos a
+  bajas frecuencias e ir descendiendo a medida que aumentan las frecuencias
+  (figura 43, inferior).
+  ● Activaciones a lo largo del tiempo asociadas a ERP (event related potentials), con lo cual quiere decir que el componente presenta un pico de actividad (positivo o negativo) luego del estímulo, no antes (figura 43, superior derecha).
+
+**Figura 43.** ​Posible fuente neuronal [14].
+
+**Nota:** si un componente parece ser mitad artefacto, mitad fuente neuronal, se sugiere dejarlo dentro del registro, o correr el algoritmo ICA nuevamente [14].
+
+<u>Rechazando (eliminando) componentes ICA de los datos:</u>
+
+Podría ser de utilidad eliminar la influencia de componentes asociados a artefactos musculares, visuales u otros en la señal EEG, sin embargo es importante tener en cuenta que, mediante este procedimiento no se está exento de eliminar posible información de utilidad.
+
+Una vez seleccionado el componente deseado,emergerá una ventana similar a las
+vistas en las figuras 40, 41, 42 y 43, presionar el botón verde Accept y éste cambiará al estado de Reject (botón rojo). En este punto, el componente está marcado para su rechazo, sin embargo no está eliminado aún, para eliminar el componente ir al menú Tools > Remove components, seleccionar los componentes a eliminar y presionar Ok, emergerá una ventana como la mostrada en la figura 44. Si se seleccionó componentes a rechazar mediante el método Accept/Reject asociado al menú Tools > Reject data using ICA > Reject components by map, estas componentes aparecerán por defecto en el campo Component(s) to remove from data) [14].
+
+Figura 44. ​ERP de los datos antes (azúl) y después (rojo) del rechazo de los
+componentes[14].
+
+La ventana anterior mostrará los ERP de los datos antes (azúl) y después (rojo) del rechazo de los componentes, si se está de acuerdo con los resultados, presionar Yes, y en la ventana emergente ingresar los datos del nuevo dataset [14].
+
+Si se intenta graficar los scaplmaps o headplots de los componentes ICA luego del rechazo, se encontrará que no se incluirán los eliminados. Si se desea, hay que ejecutar nuevamente los algoritmos ICA para obtener nuevas componentes [14].
+
+Si se quiere encontrar menos componentes de los usualmente extraídos, se debe
+ingresar “pca”,”NN” en las opciones al momento de ejecutar los algoritmos, donde NN es el número de componentes a encontrar [14].
+
+<div>
+## Referencias
+[1] "Chapter 02: Writing EEGLAB Scripts - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Writing_EEGLAB_Scripts. [Consultado: 01- Sep- 2016].
+[2] "A05: Data Structures - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A05:_Data_Structures. [Consultado: 01- Sep- 2016].
+[3] "Chapter 01: Loading Data in EEGLAB - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_01:_Loading_Data_in_EEGLAB.[Consultado: 02- Sep- 2016].
+[4] "A01: Importing Continuous and Epoched Data - SCCN", Sccn.ucsd.edu, 2016.
+[En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A01:_Importing_Continuous_Epoched_Data. [Consultado:
+02- Sep- 2016].
+[5] "Chapter 03: Event Processing - SCCN", Sccn.ucsd.edu, 2016. [En línea].
+Disponible en: https://sccn.ucsd.edu/wiki/Chapter_03:_Event_Processing.
+[Consultado: 01- Sep- 2016].
+[6] "A02: Importing Event Epoch Info - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A02:_Importing_Event_Epoch_Info. [Consultado: 01- Sep- 2016].
+[7] V. Jurcak, D. Tsuzuki & I. Dan, "10/20, 10/10, and 10/5 systems revisited: Their validity as relative head-surface-based positioning systems", NeuroImage, vol. 34, no. 4, pp. 1600-1611, 2007.
+[8] "13. Electroencephalography", Bem.fi, 2016. [En línea]. Disponible en:
+http://www.bem.fi/book/13/13.htm. [Consultado 09- Ago- 2016].
+[9] R. Oostenveld and P. Praamstra, "The five percent electrode system for
+high-resolution EEG and ERP measurements", Clinical Neurophysiology, vol. 112,no. 4, pp. 713-719, 2001.
+[10] "Chapter 02: Channel Locations - SCCN", Sccn.ucsd.edu, 2016. [En línea].
+Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Channel_Locations.
+[Consultado: 01- Sep- 2016].
+[11] "A03: Importing Channel Locations - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A03:_Importing_Channel_Locations. [Consultado: 01- Sep- 2016].
+[12] "Chapter 05: Extracting Data Epochs - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_05:_Extracting_Data_Epochs. [Consultado: 02- Sep- 2016].
+[13] A. Hyvärinen & E. Oja, "Independent component analysis: algorithms and
+applications", Neural Networks, vol. 13, no. 4-5, pp. 411-430, 2000.
+[14] "Chapter 09: Decomposing Data Using ICA - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_09:_Decomposing_Data_Using_ICA. [Consultado: 01- Sep- 2016].
+</div>
