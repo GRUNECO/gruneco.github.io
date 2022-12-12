@@ -61,11 +61,14 @@ Inicie MATLAB y agregue la carpeta “eeglabxxxx” al path de MATLAB de la sigu
 
 Home(file) > Set path > Add folder > ok > Save
 
-<center>
+<div>
+<p style = 'text-align:center;'>
 <img src="img\figs_eeglab\fig2.jpg"/>
 
 **Figura 2​**. Instalación de EEGLAB. Superior: ubicación de la opción Set Path. Inferior: ventana Set Path [3].
-</center>
+</p>
+</div>
+
 
 En el menú home (o file dependiendo de la versión) seleccione Set Path, luego la carpeta “eeglabxxxx” y para finalizar Save. Esto permitirá a la toolbox EEGLAB estar disponible para futuras sesiones de MATLAB. Tenga en cuenta que si ya presenta alguna versión previa de EEGLAB en el path de MATLAB, es recomendable desinstalarla antes de proceder con la nueva (seleccione la versión que desea retirar, luego elija Remove) [3].
 
