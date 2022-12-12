@@ -41,9 +41,11 @@ Sección utilizada para el uso de EEGLAB y el uso de las funciones en los script
 La estructura EEG contiene toda la información del dataset actual cargado a EEGLAB. Para ver lo que incluye esta estructura y lo que se ha procesado en el dataset, se puede proceder en la ventana de comandos de MATLAB con >> EEG y aparecerán las siguientes líneas de comandos (ver figura 1) [2].
 
 <center>
-<img src="img\figs_eeglab\fig1.jpg"></img>
-</center>
+<img src="img\figs_eeglab\fig1.jpg" />
+
 **Figura 1**.​ Información del dataset cargado a EEGLAB [2].
+</center>
+
 
 </div>
 <div>
@@ -68,7 +70,7 @@ Inicie MATLAB y agregue la carpeta “eeglabxxxx” al path de MATLAB de la sigu
 Home(file) > Set path > Add folder > ok > Save
 
 <center>
-<img src="img\figs_eeglab\fig2.jpg"></img>
+<img src="img\figs_eeglab\fig2.jpg"/>
 
 **Figura 2​**. Instalación de EEGLAB. Superior: ubicación de la opción Set Path. Inferior: ventana Set Path [3].
 </center>
