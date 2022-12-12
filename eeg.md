@@ -22,6 +22,8 @@ title:  "Software EEG"
 
 # Descripción de paquetes del flujo de preprocesamiento
 
+## Python
+
 - [Sovawica](https://gruneco.github.io/sovawica.html)
 - [Sovareject](https://gruneco.github.io/sovareject.html)
 - [Sovaflow](https://gruneco.github.io/sovaflow.html)
@@ -29,6 +31,10 @@ title:  "Software EEG"
 - [Sovaviolin](https://gruneco.github.io/sovaviolin.html)
 - [Sovaharmony](https://gruneco.github.io/sovaharmony.html)
 - [Sovabids](https://gruneco.github.io/sovabids.html)
+
+## Matlab
+
+- [EEGLAB](https://gruneco.github.io/eeglab.html)
 
 
 
