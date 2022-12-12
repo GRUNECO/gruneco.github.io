@@ -808,6 +808,7 @@ Características de fuentes posiblemente neuronales: El componente 2 de la figur
 <img src="img\figs_eeglab\fig43.jpg"></img>
 
 **Figura 43.** ​Posible fuente neuronal [14].
+
 </center>
 
 **Nota:** si un componente parece ser mitad artefacto, mitad fuente neuronal, se sugiere dejarlo dentro del registro, o correr el algoritmo ICA nuevamente [14].
