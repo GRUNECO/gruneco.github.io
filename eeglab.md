@@ -38,9 +38,9 @@ La estructura EEG contiene toda la información del dataset actual cargado a EEG
 
 <center>
 <img src="img\figs_eeglab\fig1.jpg" />
-
-**Figura 1**.​ Información del dataset cargado a EEGLAB [2].
 </center>
+
+<center> <b>Figura 1.</b>​ Información del dataset cargado a EEGLAB [2]. </center>
 
 ## EEGLAB pop_functions 
 
