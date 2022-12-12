@@ -609,28 +609,43 @@ Si se quiere encontrar menos componentes de los usualmente extraídos, se debe
 ingresar “pca”,”NN” en las opciones al momento de ejecutar los algoritmos, donde NN es el número de componentes a encontrar [14].
 
 <div>
+
 ## Referencias
 [1] "Chapter 02: Writing EEGLAB Scripts - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Writing_EEGLAB_Scripts. [Consultado: 01- Sep- 2016].
+
 [2] "A05: Data Structures - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A05:_Data_Structures. [Consultado: 01- Sep- 2016].
+
 [3] "Chapter 01: Loading Data in EEGLAB - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_01:_Loading_Data_in_EEGLAB.[Consultado: 02- Sep- 2016].
+
 [4] "A01: Importing Continuous and Epoched Data - SCCN", Sccn.ucsd.edu, 2016.
 [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A01:_Importing_Continuous_Epoched_Data. [Consultado:
 02- Sep- 2016].
+
 [5] "Chapter 03: Event Processing - SCCN", Sccn.ucsd.edu, 2016. [En línea].
 Disponible en: https://sccn.ucsd.edu/wiki/Chapter_03:_Event_Processing.
 [Consultado: 01- Sep- 2016].
+
 [6] "A02: Importing Event Epoch Info - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A02:_Importing_Event_Epoch_Info. [Consultado: 01- Sep- 2016].
+
 [7] V. Jurcak, D. Tsuzuki & I. Dan, "10/20, 10/10, and 10/5 systems revisited: Their validity as relative head-surface-based positioning systems", NeuroImage, vol. 34, no. 4, pp. 1600-1611, 2007.
+
 [8] "13. Electroencephalography", Bem.fi, 2016. [En línea]. Disponible en:
 http://www.bem.fi/book/13/13.htm. [Consultado 09- Ago- 2016].
+
 [9] R. Oostenveld and P. Praamstra, "The five percent electrode system for
 high-resolution EEG and ERP measurements", Clinical Neurophysiology, vol. 112,no. 4, pp. 713-719, 2001.
+
 [10] "Chapter 02: Channel Locations - SCCN", Sccn.ucsd.edu, 2016. [En línea].
 Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Channel_Locations.
 [Consultado: 01- Sep- 2016].
+
 [11] "A03: Importing Channel Locations - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A03:_Importing_Channel_Locations. [Consultado: 01- Sep- 2016].
+
 [12] "Chapter 05: Extracting Data Epochs - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_05:_Extracting_Data_Epochs. [Consultado: 02- Sep- 2016].
+
 [13] A. Hyvärinen & E. Oja, "Independent component analysis: algorithms and
 applications", Neural Networks, vol. 13, no. 4-5, pp. 411-430, 2000.
+
 [14] "Chapter 09: Decomposing Data Using ICA - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_09:_Decomposing_Data_Using_ICA. [Consultado: 01- Sep- 2016].
+
 </div>
