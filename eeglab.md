@@ -7,8 +7,6 @@ Autores:
 
 Laboratorio de neurofisiología.
 
-<div>
-
 ## Introducción a EEGLAB
 EEGLAB es una colección de funciones de MATLAB que pueden ser llamadas desde una interfaz gráfica principal o a través de comandos de línea [1]. En esta guía se expondrán diferentes pasos a seguir para pre-procesar los registros de las dos maneras; sin embargo es una información básica que puede ser ampliada en las referencias mencionadas para cada sección.
 
@@ -31,8 +29,6 @@ Retorna la estructura del primer dataset cargado en el workspace EEGLAB/MATLAB c
 
 Incluye el nombre del archivo, el número y la locación de los canales, la frecuencia de muestreo de los datos, el número de épocas o ensayos, información acerca de los eventos, cada una de las épocas, entre otros [2]. Para acceder a un dataset que se ha importado o guardado en ese momento y se desea ver en la interfaz gráfica, se utiliza el siguiente comando >> eeglab redraw. Si hay abierta una sesión de EEGLAB primero escriba ```>[ALLEEG EEG CURRENTSET] = eeg_store(ALLEEG, EEG)``` para guardar la información modificada y luego el comando anterior [1].
 
-</div>
-<div>
 
 ## Estructuras de datos de EEGLAB
 
@@ -45,10 +41,6 @@ La estructura EEG contiene toda la información del dataset actual cargado a EEG
 
 **Figura 1**.​ Información del dataset cargado a EEGLAB [2].
 </center>
-
-
-</div>
-<div>
 
 ## EEGLAB pop_functions 
 
@@ -74,8 +66,6 @@ Home(file) > Set path > Add folder > ok > Save
 
 **Figura 2​**. Instalación de EEGLAB. Superior: ubicación de la opción Set Path. Inferior: ventana Set Path [3].
 </center>
-
-
 
 En el menú home (o file dependiendo de la versión) seleccione Set Path, luego la carpeta “eeglabxxxx” y para finalizar Save. Esto permitirá a la toolbox EEGLAB estar disponible para futuras sesiones de MATLAB. Tenga en cuenta que si ya presenta alguna versión previa de EEGLAB en el path de MATLAB, es recomendable desinstalarla antes de proceder con la nueva (seleccione la versión que desea retirar, luego elija Remove) [3].
 
