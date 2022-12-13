@@ -93,7 +93,7 @@ O para iniciar EEGLAB desde comandos de línea e inicializar varias variables >>
 Una vez cargada la toolbox se mostrará la ventana principal de EEGLAB (ver figura 3) [3].
 
 <center>
-<img src="img\figs_eeglab\fig3.jpg"></img>
+<img src="img\figs_eeglab\fig3.jpg"/>
 </center> 
 
 <center>
@@ -108,7 +108,7 @@ Para cargar un dataset ya existente, es decir, en un formato reconocible por
 EEGLAB (generalmente .set), se debe seleccionar File > Load existing dataset y se mostrará una ventana similar a la figura 4 [3].
 
 <center>
-<img src="img\figs_eeglab\fig4.jpg"></img>
+<img src="img\figs_eeglab\fig4.jpg"/>
 </center>
 
 <center>
@@ -134,7 +134,7 @@ Si desea importar datasets desde la interfaz gráfica de EEGLAB, ir al menú Fil
   ● **Importación desde un arreglo de MATLAB**: La variable debe ser un arreglo en  2D, representando cada una de las filas un canal y cada una de las columnas un punto distinto (datos). Del menú File > Import data > Using EEGLAB functions and plugins seleccione from ascii/float file or Matlab array y se mostrará una ventana similar a la figura 5 [4].
 
 <center>
-<img src="img\figs_eeglab\fig5.jpg"></img>
+<img src="img\figs_eeglab\fig5.jpg"/>
 </center>
 
 <center>
@@ -147,7 +147,7 @@ en la caja de texto el nombre de la variable o archivo (en caso de ser un archiv
 Después de rellenar los campos deseados y presionar Ok se mostrará una ventana similar a la figura 6, (completar el campo File to save dataset en caso de querer guardar el dataset en una dirección) y presionar de nuevo Ok [4].
 
 <center>
-<img src="img\figs_eeglab\fig6.jpg"></img>
+<img src="img\figs_eeglab\fig6.jpg"/>
 </center>
 
 <center>
@@ -162,7 +162,7 @@ Después de rellenar los campos deseados y presionar Ok se mostrará una ventana
   ● Importación desde archivo .CNT: Para importar datasets desde CNT ir al menú ``File > Import data > From .CNT data file`` y seleccione el archivo a convertir. Luego de seleccionar el archivo CNT se mostrará una ventana parecida a la figura 7 [4].
 
   <center>
-  <img src="img\figs_eeglab\fig7.jpg"></img>
+  <img src="img\figs_eeglab\fig7.jpg"/>
   </center>
 
   <center >
@@ -178,7 +178,7 @@ Después de rellenar los campos deseados y presionar Ok se mostrará una ventana
 La subestructura EEG.event contiene los registros de los eventos experimentales que ocurrieron mientras se hizo el registro EEG. Ésta guarda en general tres campos: type, latency y urevent (ver figura 8) [2].
 
 <center>
-<img src="img\figs_eeglab\fig8.jpg"></img>
+<img src="img\figs_eeglab\fig8.jpg"/>
 </center>
 
 <center>
@@ -244,7 +244,7 @@ entre los que se encuentran: importación desde un canal, un arreglo en MATLAB o
 Importación de eventos desde un canal: Es usual que los datos asociados a eventos estén codificados en una de las filas de la matriz EEG (canales). En un dataset de 33 canales, el último corresponde a la información de eventos (en caso de presentar este tipo de almacenamiento, por ejemplo en formatos EDF), y contendrá 1 (inicio de estímulo), 2 (respuesta del sujeto) o 0 (otros). Para importar eventos desde un canal, ir al menú File > Import event info > from data channel y se activará una ventana como la mostrada en la figura 9 [6].
 
 <center>
-<img src="img\figs_eeglab\fig9.jpg"></img>
+<img src="img\figs_eeglab\fig9.jpg"7>
 </center>
 
 <center><b>Figura 9</b>. ​Importación de eventos desde canal [6].</center>
@@ -261,7 +261,7 @@ Importación de eventos desde un arreglo de MATLAB o archivo de texto (ascii: La
 Si se desea importar eventos desde un archivo de texto o arreglo en MATLAB ir al menú File > Import event info > Import Matlab array or ASCII file; se activará una ventana como la vista en la figura 10 [6].
 
 <center>
-<img src="img\figs_eeglab\fig10.jpg"></img>
+<img src="img\figs_eeglab\fig10.jpg"/>
 </center>
 <center><b>Figura 10.</b> ​Importar eventos desde archivo de texto (ascii) o arreglo de MATLAB [6].</center>
 
@@ -275,7 +275,7 @@ podrían ser de importancia [6].
 Insertar eventos manualmente: Para insertar nuevos eventos manualmente seleccione en el menú Edit > Event values. Haga clic en el botón Insert event para agregar un nuevo evento antes del evento actual y clic en Append event para añadir uno después del evento actual (ver figura 11). Luego se mostrará la información del evento para ser modificada, por ejemplo para insertar un evento tipo new modifique el campo type con new y 500 en latency, haga clic en Ok o la información no será guardada. Además, hay que considerar que los eventos se presentan en el orden en el que aumenta la latencia [5].
 
 <center>
-<img src="img\figs_eeglab\fig11.jpg"></img>
+<img src="img\figs_eeglab\fig11.jpg"/>
 </center>
 
 <center><b>Figura 11</b>. ​Editar valores de eventos [5].</center>
@@ -283,7 +283,7 @@ Otra manera de insertar eventos nuevos es seleccionando el menú Edit > Event
 fields [5]:
 
 <center>
-<img src="img\figs_eeglab\fig12.jpg"></img>
+<img src="img\figs_eeglab\fig12.jpg"/>
 </center>
 <center><b>Figura 12.</b> ​Editar campos de eventos [5].</center>
 
@@ -294,10 +294,10 @@ Importación de archivos de información E-Prime: El formato E-Prime es altament
 Importación de archivos de información .DAT (neuroscan): Para importar el archivo .DAT asociado a un archivo .CNT cargado previamente, ir al menú File > Import epoch info > From Neuroscan .DAT info file. Luego de seleccionar el archivo deseado, emergerá una ventana como la mostrada en la figura 13 [6].
 
 <center>
-<img src="img\figs_eeglab\fi13.jpg"></img>
+<img src="img\figs_eeglab\fi13.jpg"/>
 </center>
 
-<center><b>Figura 13.<b> ​Tiempo de reacción en importación de archivos .DAT [6].</center>
+<center><b>Figura 13.</b> ​Tiempo de reacción en importación de archivos .DAT [6].</center>
 
 En la importación de archivos .DAT, cada época debe contener un tiempo de
 reacción en milisegundos; aunque es posible que alguna época no tenga tiempo de reacción (si el sujeto no responde, por ejemplo). En estos casos se recomienda establecer un valor código, que indique la **ausencia** de tiempo de **respuesta**, por ejemplo, un tiempo de reacción de 1000 ms indicará que el tiempo de respuesta es nulo, pero si todas las épocas del procedimiento tienen ya asociado un tiempo de reacción, no ingrese valor alguno en este paso [6].
@@ -308,7 +308,7 @@ Para editar valores de los eventos seleccione el menú Edit > Event values. Se
 mostrará una ventana similar a la figura 14 [3].
 
 <center>
-<img src="img\figs_eeglab\fig14.jpg"></img>
+<img src="img\figs_eeglab\fig14.jpg"/>
 
 </center>
 
@@ -329,7 +329,7 @@ El botón Re-sort reordena los eventos y es solo por fines de visualización, ya
 Para visualizar el scroll de datos ir al menú Plot > Scroll data. A continuación se visualizará una ventana como la ilustrada por la figura 15 [3].
 
 <center>
-<img src="img\figs_eeglab\fig15.jpg"></img>
+<img src="img\figs_eeglab\fig15.jpg"/>
 </center>
 
 <center><b>Figura 15</b>. ​Scroll de un dataset [3].</center>
@@ -339,7 +339,7 @@ El eje x de las gráficas representa el tiempo en segundos mientras el eje y rep
 Para cambiar el tiempo mostrado en la ventana del scroll ir al menú ``Settings > Time range to display ``. En la ventana emergente ingrese el valor en segundos a mostrar. En la figura 16 se evidencia el efecto de cambiar el intervalo temporal de los 5 segundos originales (figura 15) a 10 segundos [3].
 
 <center>
-<img src="img\figs_eeglab\fig16.jpg"></img>
+<img src="img\figs_eeglab\fig16.jpg"/>
 </center>
 
 <center><b>Figura 16</b>. ​Efecto de aumentar la escala temporal [4].</center>
@@ -364,7 +364,7 @@ Si se desea eliminar datos mediante inspección visual, ir al menú Plot > Scrol
 
 
 <center>
-<img src="img\figs_eeglab\fig17.jpg"></img>
+<img src="img\figs_eeglab\fig17.jpg"/>
 </center>
 
 <center><b>Figura 17</b>.​ Regiones marcadas para su eliminación [3].</center>
@@ -392,7 +392,7 @@ La ubicación de los electrodos (canales) al momento de realizar el registro no 
 <u>**Configuración internacional 10-20**:</u>
 
 <center>
-<img src="img\figs_eeglab\fig18.jpg"></img>
+<img src="img\figs_eeglab\fig18.jpg"/>
 </center>
 
 <center><b>Figura 18</b>. ​Distribución internacional 10-20 [8].</center>
@@ -406,7 +406,7 @@ Con la necesidad de una mayor densidad de electrodos, se creó el sistema
 internacional 10-10 (figura 19), también conocido como el sistema 10% o el sistema 10-20 extendido, pudiendo ubicar con él hasta 81 electrodos, sin embargo, en la actualidad existen cascos comerciales con mayor densidad de sensores, que van desde 128 hasta 256 electrodos.
 
 <center>
-<img src="img\figs_eeglab\fig19.jpg"></img>
+<img src="img\figs_eeglab\fig19.jpg"/>
 </center>
 
 <center><b>Figura 19.</b> ​Distribución internacional 10-10 [9]. Los círculos en negro muestran la distribución original 10-20, mientras los círculos en gris representan la expansión 10-10.</center>
@@ -418,7 +418,7 @@ EEGLAB reconoce extensiones como .ced o .locs como archivos que contienen las ub
 La subestructura EEG.chanlocs guarda la información acerca de la localización de los canales y sus nombres. Para acceder a la subestructura se escribe >> EEG.chanlocs y devuelve las dimensiones de ésta y los tipos de datos que contiene; de la misma manera se puede escribir EEG.chanlocs(1) para acceder al primer canal y las coordenadas de éste [2] (ver figura 20).
 
 <center>
-<img src="img\figs_eeglab\fig20.jpg"></img>
+<img src="img\figs_eeglab\fig20.jpg"/>
 </center>
 
 <center><b>Figura 20.</b> ​Estructura EEG.chanlocs [2].</center>
@@ -428,7 +428,7 @@ En el caso de la figura 20, la estructura es 1x32, lo cual indica un registro (s
 Para cargar o editar la localización de los canales mediante interfaz, ir al menú Edit > Channel locations. Una ventana preguntará el modelo craneal para la distribución de los electrodos, lea las indicaciones de la ventana, o simplemente presione Ok [8].
 
 <center>
-<img src="img\figs_eeglab\fig21.jpg"></img>
+<img src="img\figs_eeglab\fig21.jpg"/>
 </center>
 
 <center><b>Figura 21.</b>​ Localización de canales.</center>
@@ -446,7 +446,7 @@ Una vez en la ventana ilustrada en la figura 21, para cargar las localizaciones 
 Al confirmar el archivo de ubicaciones, deberá indicarse el formato del archivo de posiciones usado en una ventana emergente como la visualizada en la figura 22. Simplemente presione Ok (autodetect), EEGLAB encontrará el formato usado basándose en la extensión del archivo [10].
 
 <center>
-<img src="img\figs_eeglab\fig22.jpg"></img>
+<img src="img\figs_eeglab\fig22.jpg"/>
 </center>
 <center><b>Figura 22.</b> ​Formato del archivo chan-loc [10].</center>
 
@@ -479,7 +479,7 @@ label, de acuerdo con el archivo “Standard-10-5-Cap385.sfp” localizado en
 “eeglabxxxx/function/resources” (figura 23) [11].
 
 <center>
-<img src="img\figs_eeglab\fig23.jpg"></img>
+<img src="img\figs_eeglab\fig23.jpg"/>
 </center>
 <center><b>Figura 23.</b> ​Ubicación automática de electrodos cuando el dataset contiene labels de los canales [11].</center>
 
@@ -489,7 +489,7 @@ En la tabla 2 se indican los formatos soportados por EEGLAB al momento de
 importar la locación de canales [11].
 
 <center>
-<img src="img\figs_eeglab\tab2.jpg"></img>
+<img src="img\figs_eeglab\tab2.jpg"/>
 </center>
 
 <center><b>Tabla 2.</b> ​Formatos de chan-loc soportados por EEGLAB para importación [11].</center>
@@ -499,18 +499,18 @@ Los formatos marcados con la casilla Y (verde) en la columna EEGLAB pueden ser i
 En las tablas 3, 4 y 5 se presenta el formato usado para registrar locaciones en extensión .loc (polares), .sph (esféricas) y .xyz (cartesianas) respectivamente. Hay que tener en cuenta que la primera fila es usada con propósitos ilustrativos y debe ser ignorada en un archivo real [11].
 
 <center>
-<img src="img\figs_eeglab\tab3.jpg"></img>
+<img src="img\figs_eeglab\tab3.jpg"/>
 </center>
 <center><b>Tabla 3</b>. ​Formato extensión .loc [11].</center>
 
 <center>
-<img src="img\figs_eeglab\tab4.jpg"></img>
+<img src="img\figs_eeglab\tab4.jpg"/>
 </center>
 
 <center><b>Tabla 4.</b> ​Formato extensión .sph [11].</center>
 
 <center>
-<img src="img\figs_eeglab\tab5.jpg"></img>
+<img src="img\figs_eeglab\tab5.jpg"/>
 </center>
 
 <center><b>Tabla 5.</b>​Formato extensión .xyz [11].</center>
@@ -524,13 +524,13 @@ Si se desea visualizar la ubicación de los electrodos desde el menú principal 
 
 
 <center>
-<img src="img\figs_eeglab\fig24.jpg"></img>
+<img src="img\figs_eeglab\fig24.jpg"/>
 </center>
 
 <center><b>Figura 24<b>. ​Visualización en 2D de los electrodos [11].</center>
 
 <center>
-<img src="img\figs_eeglab\fig25.jpg"></img>
+<img src="img\figs_eeglab\fig25.jpg"/>
 </center>
 
 <center><b>Figura 25</b>. ​Visualización en 3D de los electrodos [11].</center>
@@ -545,7 +545,7 @@ EEG.epoch se encuentra ubicado dentro de la variable EEG, esta estructura
 contiene información acerca de las épocas asociadas al registro. Es una estructura similar a EEG.event, excepto que solo hay un registro para cada época, que contiene los siguientes campos: event, eventlatency, eventposition, eventtype, eventurevent. Los campos dentro de esta estructura son homólogos a los encontrados en EEG.events con excepción del campo event, el cual contien el índice de los eventos ocurridos en una época en específico. La longitud de la estructura hace referencia al número de épocas en el registro (ver figura 26) [2].
 
 <center>
-<img src="img\figs_eeglab\fig26.jpg"></img>
+<img src="img\figs_eeglab\fig26.jpg"/>
 </center>
 <center><b>Figura 26.</b> ​Estructura EEG.epoch [2].</center>
 
@@ -553,7 +553,7 @@ Para la extracción de épocas por medio de la interfaz gráfica se sigue de la
 siguiente manera: Tools > Extract Epochs [12].
 
 <center>
-<img src="img\figs_eeglab\fig27.jpg"></img>
+<img src="img\figs_eeglab\fig27.jpg"/>
 </center>
 
 <center><b>Figura 27</b>. ​Extraer épocas [12].</center>
@@ -561,7 +561,7 @@ siguiente manera: Tools > Extract Epochs [12].
 De acuerdo a la figura 27 se hace clic en el botón superior derecho “...” , y se presenta una ventana con los tipos de eventos disponibles (ver figura 28) [12].
 
 <center>
-<img src="img\figs_eeglab\fig28.jpg"></img>
+<img src="img\figs_eeglab\fig28.jpg"/>
 </center>
 
 <center><b>Figura 28</b>. ​Tipos de eventos disponibles [12].</center>
@@ -569,7 +569,7 @@ De acuerdo a la figura 27 se hace clic en el botón superior derecho “...” ,
 Se elige un tipo de evento, para el ejemplo de la figura 28 se escoge “square” y se presiona Ok.
 
 <center>
-<img src="img\figs_eeglab\fig29.jpg"></img>
+<img src="img\figs_eeglab\fig29.jpg"/>
 </center>
 
 <center><b>Figura 29</b>. ​Extraer épocas [12].</center>
@@ -579,7 +579,7 @@ A continuación en la figura 29, en Epoch limits se ponen el tiempo en segundos 
 Seguidamente sale una ventana con opción para cambiar el nombre, guardar el dataset en una ubicación o aceptar lo que está por defecto, presionar Ok para confirmar (ver figura 30) [12].
 
 <center>
-<img src="img\figs_eeglab\fig30.jpg"></img>
+<img src="img\figs_eeglab\fig30.jpg"/>
 </center>
 
 <center><b>Figura 30</b>.​ Información de dataset [12].</center>
@@ -594,7 +594,7 @@ Después de haber extraído las épocas de los datos, la siguiente ventana (ver 
 seleccionando en el menú Tools > Remove baseline [12].
 
 <center>
-<img src="img\figs_eeglab\fig31.jpg"></img>
+<img src="img\figs_eeglab\fig31.jpg"/>
 </center>
 
 <center><b>**Figura 31**</b>. ​Remoción de la línea base [12].</center>
@@ -615,7 +615,7 @@ No se debe olvidar primero remover la actividad de referencia o línea de base:
 ```>> EEG = pop_rmbase( EEG, [-1000 0]);```
 
 <center>
-<img src="img\figs_eeglab\fig32.jpg"></img>
+<img src="img\figs_eeglab\fig32.jpg"/>
 </center>
 
 <center><b>Figura 32</b>. ​Ventana del buscador de archivos [5].</center>
@@ -629,14 +629,14 @@ Importar épocas desde arreglo de MATLAB: Si se desea importar épocas, ir al me
 Importar épocas desde un archivo de texto (ascii): Para importar épocas desde un archivo de texto, ir al menú File > Import epoch info > from Matlab array or ascii file. En la tabla 6 se indica el formato necesario para el archivo [4]. 
 
 <center>
-<img src="img\figs_eeglab\tab6.jpg"></img>
+<img src="img\figs_eeglab\tab6.jpg"/>
 </center>
 <center><b>Tabla 6</b>. ​Formato de archivo de texto para importar épocas</center>
 
 La figura 33 indica la ventana asociada a la importación de épocas mediante archivo de texto.
 
 <center>
-<img src="img\figs_eeglab\fig33.jpg"></img>
+<img src="img\figs_eeglab\fig33.jpg"/>
 </center>
 
 <center><b>Figura 33.</b> ​Importación de épocas mediante archivo de texto [4].</center>
@@ -665,7 +665,7 @@ El análisis de componentes independientes (ICA por sus siglas en inglés) es un
 Para encontrar las componentes ICA mediante la interfaz gráfica de EEGLAB, ir al menú Tools > Run ICA. Se mostrará una ventana emergente como la mostrada en la figura 34 [14].
 
 <center>
-<img src="img\figs_eeglab\fig34.jpg"></img>
+<img src="img\figs_eeglab\fig34.jpg"/>
 </center>
 
 <center><b>Figura 34</b>. ​Algoritmos ICA mediante interfaz gráfica en EEGLAB [14].</center>
@@ -692,13 +692,13 @@ Para graficar los componentes ICA en 2D ir al menú Plot > Component maps > in
 2-D, emergerá una ventana similar a la mostrada en la figura 35 [14].
 
 <center>
-<img src="img\figs_eeglab\fig35.jpg"></img>
+<img src="img\figs_eeglab\fig35.jpg"/>
 </center>
 
 Luego de introducir el número de componentes a graficar, pulsar Ok. En la figura 36 se pueden observar los scalpmaps de algunas componentes ICA.
 
 <center>
-<img src="img\figs_eeglab\fig36.jpg"></img>
+<img src="img\figs_eeglab\fig36.jpg"/>
 </center>
 
 <center><b>Figura 36</b>. ​Scalpmaps de componentes ICA [14].</center>
@@ -710,7 +710,7 @@ Luego de introducir el número de componentes a graficar, pulsar Ok. En la figur
 Para graficar la activación de los componentes en 3D ir al menú Plot > Component maps > in 2-D, emergerá una ventana como la mostrada en la figura 37 [14].
 
 <center>
-<img src="img\figs_eeglab\fig37.jpg"></img>
+<img src="img\figs_eeglab\fig37.jpg"/>
 </center>
 
 <center>
@@ -720,7 +720,7 @@ Para graficar la activación de los componentes en 3D ir al menú Plot > Compone
 Seleccionar los componentes a graficar, junto con los electrodos a ubicar (si se desea) y presionar Ok. En la figura 38 se pueden observar los headplots de algunos componentes ICA.
 
 <center>
-<img src="img\figs_eeglab\fig38.jpg"></img>
+<img src="img\figs_eeglab\fig38.jpg"/>
 </center>
 
 <center><b>Figura 38</b>.​ Headplots de componentes ICA [14].</center>
@@ -738,7 +738,7 @@ Component activation (scroll)).
 Para estudiar las propiedades de los componentes y si se desea marcarlos para su rechazo (eliminación del aporte del componente a la señal), ir al menú tools > Reject data using ICA > Reject components by map y emergerá una ventana similar a la mostrada en la figura 39 [14].
 
 <center>
-<img src="img\figs_eeglab\fig39.jpg"></img>
+<img src="img\figs_eeglab\fig39.jpg"/>
 </center>
 
 <center><b>Figura 39.</b> ​Propiedades y rechazo de componentes [14].</center>
@@ -754,7 +754,7 @@ Características de componentes oculares: El componente 3 de la figura 39 muestr
   superior derecha).
 
 <center>
-<img src="img\figs_eeglab\fig40.jpg"></img>
+<img src="img\figs_eeglab\fig40.jpg"/>
 </center>
 
 <center><b>Figura 40</b>. ​Posible artefacto ocular [14].</center>
@@ -768,7 +768,7 @@ muestra signos de estar asociado a un artefacto muscular, estos artefactos suele
   inferior).
 
 <center>
-<img src="img\figs_eeglab\fig41.jpg"></img>
+<img src="img\figs_eeglab\fig41.jpg"/>
 </center>
 
 <center><b>Figura 41</b>. Posible artefacto muscular [14].</center>
@@ -776,7 +776,7 @@ muestra signos de estar asociado a un artefacto muscular, estos artefactos suele
 Características de artefactos asociados a electrodos sueltos: Un tipo usual de artefacto encontrado es el asociado a electrodos que, durante el registro, perdieron contacto o su impedancia asociada aumentó demasiado. En la figura 39 no está presente este tipo de artefacto (no con certeza), sin embargo, la componente 24 muestra signos de haber captado ruido de 60 Hz, especialmente luego del trial 65 (figura 42, superior derecha). Este tipo de artefactos suele presentar activación espacial localizada y no presentar representación de dipolo (como sí lo suelen hacer las fuentes neuronales) [14].
 
 <center>
-<img src="img\figs_eeglab\fig42.jpg"></img>
+<img src="img\figs_eeglab\fig42.jpg"/>
 </center>
 <center><b>Figura 42</b>. ​Influencia del ruido externo en los componentes EEG [14].</center>
 
@@ -789,7 +789,7 @@ Características de fuentes posiblemente neuronales: El componente 2 de la figur
   ● Activaciones a lo largo del tiempo asociadas a ERP (event related potentials), con lo cual quiere decir que el componente presenta un pico de actividad (positivo o negativo) luego del estímulo, no antes (figura 43, superior derecha).
 
 <center>
-<img src="img\figs_eeglab\fig43.jpg"></img>
+<img src="img\figs_eeglab\fig43.jpg"/>
 </center>
 
 <center><b>Figura 43.</b> ​Posible fuente neuronal [14].</center>
