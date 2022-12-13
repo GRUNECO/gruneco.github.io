@@ -35,6 +35,7 @@ title:  "Software EEG"
 ## Matlab
 
 - [EEGLAB](https://gruneco.github.io/eeglab.html)
+- [GUÍA DE IMPORTACIÓN EDF](https://gruneco.github.ioguidelines_import_edf.html)
 
 
 
