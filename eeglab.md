@@ -813,9 +813,9 @@ Si se intenta graficar los scaplmaps o headplots de los componentes ICA luego de
 Si se quiere encontrar menos componentes de los usualmente extraídos, se debe
 ingresar “pca”,”NN” en las opciones al momento de ejecutar los algoritmos, donde NN es el número de componentes a encontrar [14].
 
-<div>
 
 ## Referencias
+
 [1] "Chapter 02: Writing EEGLAB Scripts - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Writing_EEGLAB_Scripts. [Consultado: 01- Sep- 2016].
 
 [2] "A05: Data Structures - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/A05:_Data_Structures. [Consultado: 01- Sep- 2016].
@@ -852,5 +852,3 @@ Disponible en: https://sccn.ucsd.edu/wiki/Chapter_02:_Channel_Locations.
 applications", Neural Networks, vol. 13, no. 4-5, pp. 411-430, 2000.
 
 [14] "Chapter 09: Decomposing Data Using ICA - SCCN", Sccn.ucsd.edu, 2016. [En línea]. Disponible en: https://sccn.ucsd.edu/wiki/Chapter_09:_Decomposing_Data_Using_ICA. [Consultado: 01- Sep- 2016].
-
-</div>
