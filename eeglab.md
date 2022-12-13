@@ -294,7 +294,7 @@ Importación de archivos de información E-Prime: El formato E-Prime es altament
 Importación de archivos de información .DAT (neuroscan): Para importar el archivo .DAT asociado a un archivo .CNT cargado previamente, ir al menú File > Import epoch info > From Neuroscan .DAT info file. Luego de seleccionar el archivo deseado, emergerá una ventana como la mostrada en la figura 13 [6].
 
 <center>
-<img src="img\figs_eeglab\fi13.jpg"/>
+<img src="img\figs_eeglab\fig13.jpg"/>
 </center>
 
 <center><b>Figura 13.</b> ​Tiempo de reacción en importación de archivos .DAT [6].</center>
@@ -389,7 +389,7 @@ Donde EEG es la estructura asociada al dataset en cuestión.
 
 La ubicación de los electrodos (canales) al momento de realizar el registro no es aleatoria, viene dada por distribuciones estándar pensadas para promover la reproducibilidad en registros EEG y optimizar la captación de información [7].
 
-<u>**Configuración internacional 10-20**:</u>
+<u><b>Configuración internacional 10-20**: </></u>
 
 <center>
 <img src="img\figs_eeglab\fig18.jpg"/>
@@ -400,7 +400,7 @@ La ubicación de los electrodos (canales) al momento de realizar el registro no 
 La configuración internacional 10-20 (figura 18) se mantuvo durante medio siglo como la configuración estándar para la ubicación de electrodos en
 electroencefalografía. Este sistema, describe la posición de los sensores en la superficie de la cabeza mediante la distancia relativa entre puntos de referencia en la superficie craneal. El objetivo original del sistema, era proveer una metodología reproducible para colocar un número de electrodos de EEG relativamente bajo, generalmente 21 [7].
 
-<u>**Configuración internacional 10-10**</u>
+<u><b>Configuración internacional 10-10</b></u>
 
 Con la necesidad de una mayor densidad de electrodos, se creó el sistema
 internacional 10-10 (figura 19), también conocido como el sistema 10% o el sistema 10-20 extendido, pudiendo ubicar con él hasta 81 electrodos, sin embargo, en la actualidad existen cascos comerciales con mayor densidad de sensores, que van desde 128 hasta 256 electrodos.
@@ -527,7 +527,7 @@ Si se desea visualizar la ubicación de los electrodos desde el menú principal 
 <img src="img\figs_eeglab\fig24.jpg"/>
 </center>
 
-<center><b>Figura 24<b>. ​Visualización en 2D de los electrodos [11].</center>
+<center><b>Figura 24</b>. ​Visualización en 2D de los electrodos [11].</center>
 
 <center>
 <img src="img\figs_eeglab\fig25.jpg"/>
