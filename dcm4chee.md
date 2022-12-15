@@ -20,3 +20,20 @@ Por su parte, DCM4CHEE es un administrador de imágenes/archivo de imágenes (se
 |Otros servicios DICOM|MPPS , GPWL , MWL , compromiso de almacenamiento, notificación de disponibilidad de instancias, notificación de contenido de estudio, contenido de salida a medios de CD, protocolos colgantes y más.|
 |Servidor HL7|Un servidor HL7 integrado que puede actuar sobre tipos de mensajes ADT, ORM y ORU.|
 |Servicios IHE|dcm4chee puede existir felizmente en un entorno compatible con IHE mediante la integración con un registro y repositorio XDS / XDSI , actuando como un nodo seguro y proporcionando auditoría compatible.|
+
+## Pasos para instalación de DCM4CHEE
+
+En caso de que su sistema operativo sea Windows: 
+
+Instalar Linux en Windows con WSL 
+
+A continuación, se presenta el paso a paso para instalar la distribución de Linux “Ubuntu” utilizando el Subsistema de Windows para Linux. 
+
+Instalar WSL 
+
+Es posible instalar todo lo que necesita para ejecutar el Subsistema de Windows para Linux (WSL) ingresando este comando en un administrador PowerShell o Símbolo del sistema de Windows y luego reiniciando su máquina. 
+```
+wsl --install 
+```
+
+Este comando habilitará los componentes opcionales requeridos, descargará el kernel de Linux más reciente, establecerá WSL 2 como predeterminado e instalará una distribución de Linux en este caso Ubuntu (Predeterminado).
