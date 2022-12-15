@@ -40,7 +40,7 @@ Este comando habilitará los componentes opcionales requeridos, descargará el k
 
 Configure su información de usuario de Linux 
 
-Una vez que haya instalado WSL, deberá crear una cuenta de usuario y una contraseña para su distribución de Linux recién instalada [1]. 
+Una vez que haya instalado WSL, deberá crear una cuenta de usuario y una contraseña para su distribución de Linux recién instalada. 
 
 Finalizado este proceso ingrese a la ventada de comandos de Ubuntu y proceda a iniciar la instalación. 
 
@@ -139,4 +139,5 @@ Posteriormente se mostrará en pantalla la interfaz para inicio de sesión, **in
 
 [1] "Open Source Clinical Image and Object Management", 2022. [En línea]. Disponible en:
 https://www.dcm4che.org/. [Consultado 03- Oct- 2022].
+
 
