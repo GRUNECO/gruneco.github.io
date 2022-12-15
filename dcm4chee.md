@@ -140,4 +140,6 @@ Posteriormente se mostrará en pantalla la interfaz para inicio de sesión, **in
 [1] "Open Source Clinical Image and Object Management", 2022. [En línea]. Disponible en:
 https://www.dcm4che.org/. [Consultado 03- Oct- 2022].
 
+Imagen que contiene interior, persona, hombre, ventana
+
 
