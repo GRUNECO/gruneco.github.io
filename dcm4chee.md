@@ -101,6 +101,38 @@ sudo docker run --network=dcm4chee_default --name arc -p 8080:8080 -p 8443:8443 
 ```
 
 **Nota:** Cambiar < docker-host > por la dirección ip. 
+
+12. **Iniciar el Sistema**
+```
+nano dcm4chee.sh 
+```
+ 
+A continuación, en la Ventana emergente ejecutar el siguiente comando:  
+```
+docker start ldap keycloak db arc 
+```
+
+Luego volviendo a la consola: 
+
+Volver ejecutable el archive creado 
+```
+chmod u+x dcm4chee.sh 
+```
+
+13. **Iniciar**
+```
+sudo ./dcm4chee.sh 
+```
+ 
+14. **Ingresar en el navegador web**
+
+<https://<docker-host>:8843/auth/admin/dcm4che/console> 
+
+**Nota:** Cambiar < docker-host > por la dirección ip. 
+
+Puede salir un aviso “Your connection is not private”, en este caso presionar el botón “advanced” para continuar. 
+
+Posteriormente se mostrará en pantalla la interfaz para inicio de sesión, **iniciar con: admin/admin**
  
 
 ## Referencias
