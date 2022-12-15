@@ -64,7 +64,7 @@ groupadd -r dcm4chee-arc --gid=1023 && useradd -r -g dcm4chee-arc --uid=1023 dcm
 
 groupadd -r keycloak-dcm4chee --gid=1029 && useradd -r -g keycloak-dcm4chee --uid=1029 keycloak-dcm4chee  
 ```
-4. **Cerrar sesión root **
+4. **Cerrar sesión root**
 ```
 Exit 
 ```
@@ -100,7 +100,7 @@ sudo docker run --network=dcm4chee_default --name db -p 5432:5432 -e POSTGRES_DB
 sudo docker run --network=dcm4chee_default --name arc -p 8080:8080 -p 8443:8443 -p 9990:9990 -p 11112:11112 -p 2575:2575 -e POSTGRES_DB=pacsdb -e POSTGRES_USER=pacs -e POSTGRES_PASSWORD=pacs -e WILDFLY_WAIT_FOR="ldap:389 db:5432" -e AUTH_SERVER_URL=https://<docker-host>:8843/auth -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/wildfly:/opt/wildfly/standalone -d dcm4che/dcm4chee-arc-psql:5.16.0-secure-ui 
 ```
 
-**Nota:** Cambiar <docker-host> por la dirección ip estática. Del item 10. 
+**Nota:** Cambiar < docker-host > por la dirección ip. 
  
 
 ## Referencias
