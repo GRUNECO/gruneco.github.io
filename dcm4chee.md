@@ -49,7 +49,7 @@ Finalizado este proceso ingrese a la ventada de comandos de Ubuntu y proceda a i
 ```
 sudo apt-get install docker.io 
 ```
-2. **Agregar grupos ** 
+2. **Agregar grupos** 
 ```
 sudo -i 
 ```
@@ -87,7 +87,7 @@ sudo docker network create dcm4chee_default
 sudo docker run --network=dcm4chee_default --name ldap -p 389:389 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/ldap:/var/lib/ldap -v /var/local/dcm4chee-arc/slapd.d:/etc/ldap/slapd.d -d dcm4che/slapd-dcm4chee:2.4.44-16.0 
 ```
 
-9.**Iniciar la imagen Keycloak**
+9. **Iniciar la imagen Keycloak**
 ```
 sudo docker run --network=dcm4chee_default --name keycloak -p 8880:8880 -p 8843:8843 -p 8990:8990 -e HTTP_PORT=8880 -e HTTPS_PORT=8843 -e MANAGEMENT_HTTP_PORT=8990 -e KEYCLOAK_WAIT_FOR=ldap:389 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/keycloak:/opt/keycloak/standalone -d dcm4che/keycloak:4.6.0-16.0 
 ```
