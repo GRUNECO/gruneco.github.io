@@ -69,25 +69,25 @@ groupadd -r keycloak-dcm4chee --gid=1029 && useradd -r -g keycloak-dcm4chee --ui
 Exit 
 ```
 
-5.** Iniciar Docker **
+5. **Iniciar Docker**
 ```
 Sudo dockerd 
 ```
  
-6. **Actualizar **
+6. **Actualizar**
 ```
 Sudo apt-get update 
 ```
-7. **Crear la interfaz de red virtual **
+7. **Crear la interfaz de red virtual**
 ```
 sudo docker network create dcm4chee_default 
 ```
-8. **Iniciar la imagen LDAP **
+8. **Iniciar la imagen LDAP**
 ```
 sudo docker run --network=dcm4chee_default --name ldap -p 389:389 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/ldap:/var/lib/ldap -v /var/local/dcm4chee-arc/slapd.d:/etc/ldap/slapd.d -d dcm4che/slapd-dcm4chee:2.4.44-16.0 
 ```
 
-9.** Iniciar la imagen Keycloak **
+9.**Iniciar la imagen Keycloak**
 ```
 sudo docker run --network=dcm4chee_default --name keycloak -p 8880:8880 -p 8843:8843 -p 8990:8990 -e HTTP_PORT=8880 -e HTTPS_PORT=8843 -e MANAGEMENT_HTTP_PORT=8990 -e KEYCLOAK_WAIT_FOR=ldap:389 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/keycloak:/opt/keycloak/standalone -d dcm4che/keycloak:4.6.0-16.0 
 ```
