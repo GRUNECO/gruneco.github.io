@@ -91,8 +91,16 @@ sudo docker run --network=dcm4chee_default --name ldap -p 389:389 -v /etc/localt
 ```
 sudo docker run --network=dcm4chee_default --name keycloak -p 8880:8880 -p 8843:8843 -p 8990:8990 -e HTTP_PORT=8880 -e HTTPS_PORT=8843 -e MANAGEMENT_HTTP_PORT=8990 -e KEYCLOAK_WAIT_FOR=ldap:389 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/keycloak:/opt/keycloak/standalone -d dcm4che/keycloak:4.6.0-16.0 
 ```
+10. **Iniciar la imagen DB** 
+```
+sudo docker run --network=dcm4chee_default --name db -p 5432:5432 -e POSTGRES_DB=pacsdb -e POSTGRES_USER=pacs -e POSTGRES_PASSWORD=pacs -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/db:/var/lib/postgresql/data -d dcm4che/postgres-dcm4chee:11.2-16 
+```
+11. **Iniciar la imagen arc**
+```
+sudo docker run --network=dcm4chee_default --name arc -p 8080:8080 -p 8443:8443 -p 9990:9990 -p 11112:11112 -p 2575:2575 -e POSTGRES_DB=pacsdb -e POSTGRES_USER=pacs -e POSTGRES_PASSWORD=pacs -e WILDFLY_WAIT_FOR="ldap:389 db:5432" -e AUTH_SERVER_URL=https://<docker-host>:8843/auth -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro -v /var/local/dcm4chee-arc/wildfly:/opt/wildfly/standalone -d dcm4che/dcm4chee-arc-psql:5.16.0-secure-ui 
+```
 
- 
+**Nota:** Cambiar <docker-host> por la dirección ip estática. Del item 10. 
  
 
 ## Referencias
