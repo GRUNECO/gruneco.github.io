@@ -114,7 +114,7 @@ docker start ldap keycloak db arc
 
 Luego volviendo a la consola: 
 
-Volver ejecutable el archive creado 
+Volver ejecutable el archivo creado 
 ```
 chmod u+x dcm4chee.sh 
 ```
@@ -126,7 +126,7 @@ sudo ./dcm4chee.sh
  
 14. **Ingresar en el navegador web**
 
-<https://<docker-host>:8843/auth/admin/dcm4che/console> 
+https://<docker-host>:8843/auth/admin/dcm4che/console
 
 **Nota:** Cambiar < docker-host > por la dirección ip. 
 
