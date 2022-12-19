@@ -132,8 +132,14 @@ https://<docker-host>:8843/auth/admin/dcm4che/console
 
 Puede salir un aviso “Your connection is not private”, en este caso presionar el botón “advanced” para continuar. 
 
-Posteriormente se mostrará en pantalla la interfaz para inicio de sesión, **iniciar con: admin/admin**
- 
+Posteriormente se mostrará en pantalla la interfaz para inicio de sesión, **iniciar con: admin/admin** (Ver figura 1)
+
+
+
+<center>
+<img src="img\fig_dcm4chee\fig1.png" />
+</center>
+<center> <b>Figura 1.</b>​ Interfaz de inicio DCM4CHEE. </center>
 
 ## Referencias
 
