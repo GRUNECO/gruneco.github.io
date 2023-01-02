@@ -38,4 +38,4 @@ SPM fMRI
 volbrain
 wfupickatlas
 XJView
-XNAT
+|XNAT|||||https://luisam19.github.io/PDI/Clase03#correr-xnat-en-una-m%C3%A1quina-virtual|
