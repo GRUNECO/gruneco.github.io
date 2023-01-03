@@ -1,41 +1,44 @@
-|Toolbox|Descripción|Aplicación|Entorno|Enlaces de documentación|
-accubrain
-AFNI
-ANDY BRAIN BOOK
-|BIDS||||https://bids.neuroimaging.io/benefits.html|
-brain connectivity toolbox
-brainnet viewer
-CAT12
-CONN
-C-PAC
-dipy
-DPABI/dparsf-a
-DTI-tk
-dynamicbc
-EEGLAB
-ERPLAB
-fastsurfer
-FreeSurfer
-FSL
-fslnet
-gift
-GLMSingle
-graph vars
-GRETNA
-marsbar
-MRITrix
-Nilearn
-Nipype
-Notip
-PANDA
-PyMVPA
-REST
-Simtv
-snpm
-SPM
-SPM EEG 
-SPM fMRI
-volbrain
-wfupickatlas
-XJView
-|XNAT|||||https://luisam19.github.io/PDI/Clase03#correr-xnat-en-una-m%C3%A1quina-virtual|
+# Generalidades Toolbox
+
+|N°|Toolbox|Descripción|Aplicación|Entorno|Enlaces de documentación|
+|-------|--------|--------|--------|--------|--------|
+|1|**AccuBrain**|Herramienta de evaluación de imágenes cerebrales asistida por Inteligencia Artificial, la cual permite extracción de volumetría cerebral automatizada. Permite cuantificación de las imágenes cerebrales para la detección temprana y el diagnostico cerebral|<p>1. Cuantificación  de la atrofia cerebral<br><br> 2. Cuantificación de los vasos sanguíneos pequeños por medio de MRI<br><br> 3. Biomarcadores de imágenes para el diagnostico diferencial</p>|Acceso privado|Realizar contacto con administrador de cuentas para la cotización del producto.<br><br> Correo electrónico: info@brainnow.cn<br><br> [Documentación AccuBrain](https://www.brainnow.net/about-accubrain)|
+|2|**AFNI**|||<li> Python<br> <li>C<br> <li>R<br> <li>Scripts de shell<br><br> Se incluye paquetes binarios para sistemas MacOS y linux como Fedora, CentOS/Red Hat y Ubuntu. ||
+|3|ANDY BRAIN BOOK|||||
+|4|BIDS||||https://bids.neuroimaging.io/benefits.html|
+|5|brain connectivity toolbox|||||
+|6|brainnet viewer|||||
+|7|CAT12|||||
+|8|CONN|||||
+|9|C-PAC|||||
+|10|dipy|||||
+|11|DPABI/dparsf-a|||||
+|12|DTI-tk|||||
+|13|dynamicbc|||||
+|14|EEGLAB|||||
+|15|ERPLAB|||||
+|16|fastsurfer|||||
+|17|FreeSurfer|||||
+|18|FSL|||||
+|19|fslnet|||||
+|20|gift|||||
+|21|GLMSingle|||||
+|22|graph vars|||||
+|23|GRETNA|||||
+|24|marsbar|||||
+|25|MRITrix|||||
+|26|Nilearn|||||
+|27|Nipype|||||
+|28|Notip|||||
+|29|PANDA|||||
+|30|PyMVPA|||||
+|31|REST|||||
+|32|Simtv|||||
+|33|snpm|||||
+|34|SPM|||||
+|35|SPM EEG |||||
+|36|SPM fMRI|||||
+|37|volbrain|||||
+|38|wfupickatlas|||||
+|39|XJView|||||
+|40|XNAT|||||https://luisam19.github.io/PDI/Clase03#correr-xnat-en-una-m%C3%A1quina-virtual|
