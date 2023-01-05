@@ -1,0 +1,22 @@
+# Descripción de paquetes del flujo de preprocesamiento
+
+## Python
+- link: data_eeg/sovawica.html
+  title: sovawica
+- link: data_eeg/sovareject.html
+  title: sovareject
+- link: data_eeg/sovaflow.html
+  title: sovaflow
+- link: data_eeg/sovachronux.html
+  title: sovachronux
+- link: data_eeg/sovaviolin.html
+  title: sovaviolin
+- link: data_eeg/sovaharmony.html
+  title: sovaharmony
+- link: data_eeg/sovabids.html
+  title: sovabids 
+
+## Matlab
+
+/eeglab.html)
+guidelines_import_edf.html)
