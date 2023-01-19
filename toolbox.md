@@ -1,6 +1,6 @@
 # Generalidades Toolbox
 
-|N°|Toolbox|Descripción de la herramienta|Aplicación|Entorno|Enlaces de documentación|
+|N°|Toolbox|Descripción de la herramienta|Aplicación|Entorno|Documentación|
 |-------|--------|--------|--------|--------|--------|
 |1|**AccuBrain**|Herramienta de evaluación de imágenes cerebrales asistida por Inteligencia Artificial, la cual permite extracción de volumetría cerebral automatizada. Permite cuantificación de las imágenes cerebrales para la detección temprana y el diagnostico cerebral|<p>1. Cuantificación  de la atrofia cerebral<br><br> 2. Cuantificación de los vasos sanguíneos pequeños por medio de MRI<br><br> 3. Biomarcadores de imágenes para el diagnostico diferencial</p>|Acceso privado|Realizar contacto con administrador de cuentas para la cotización del producto.<br><br> Correo electrónico: info@brainnow.cn<br><br> [Documentación AccuBrain](https://www.brainnow.net/about-accubrain)|
 |2|**AFNI**|||<li> Python<br> <li>C<br> <li>R<br> <li>Scripts de shell<br><br> Se incluye paquetes binarios para sistemas MacOS y linux como Fedora, CentOS/Red Hat y Ubuntu. ||
