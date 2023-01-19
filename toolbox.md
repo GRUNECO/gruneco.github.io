@@ -41,4 +41,4 @@
 |37|volbrain|||||
 |38|wfupickatlas|||||
 |39|XJView|||||
-|40|XNAT|||||https://luisam19.github.io/PDI/Clase03#correr-xnat-en-una-m%C3%A1quina-virtual|
+|40|XNAT|||||[Tutorial de instalación](https://luisam19.github.io/PDI/Clase03#correr-xnat-en-una-m%C3%A1quina-virtual)|
